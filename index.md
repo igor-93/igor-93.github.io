@@ -28,7 +28,7 @@ You can also check my [Github](https://www.github.com/igor-93)
 
 # Projects
 
-Since I started this page just recently, I am bit lazy to fill it with all of the projects I've done so far, 
+Since I started this page just recently, I am a bit lazy to fill it with all of the projects I've done so far, 
 so I will only mention one for now...
 
 It is a market notification tool. More about it [here](./market-alerts).

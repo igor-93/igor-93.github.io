@@ -20,10 +20,22 @@ Subject: `add alert`
 
 Body:
 ```
-ticker = "TSLA"
+ticker = "ADA-USD"
 indicator = "all_time_hilo"
 silence_for = "10h"
 ```
+
+The response that the you would have received if you had this alert on the 2021-05-15 would be:
+
+`Alerts: ADA-USD: all-time HIGH`
+
+```
+Triggered alerts:
+
+ADA-USD reached all-time HIGH at 2.18
+For more details on how to (un-)subscribe, please check the docs here.
+```
+
 
 To subscribe to multiple emails at once, adjust the email content as follows:
 ```
@@ -80,4 +92,21 @@ To find what ticker you can pass to the alert, go to [Yahoo](https://finance.yah
 
 ### Indicator types
 
-TODO: Here describe alerts that are implemented and for each of them explain the parameters
+As you probably realized, the tool supports various types of indicators that can notify you of various events that are happening on the market.
+Althought the number of different indicators is constantly increasing, here is the list of what is currently available:
+
+#### All-time high or low
+- Indicator name: `all_time_hilo`
+- Parameters: none
+
+Notifies you if the ticker has reached all-time-high price or all-time-low price.
+
+Note: currently, it only takes into account the available data that I have, not the whole history from yahoo. So if you look for some major index, it will be correct, but otherwise it might only take recent data for comparison
+
+#### Pct change since last trading session
+- Indicator name: `pct_last_close`
+- Parameters:
+	- `threshold`: (absolute) percentage change since last session close must be higher then this. E.g. `0.01` is 1%
+	- `sign`: optional. If `le` (stands for less or equal than) then the alert triggers only if price drops by at least `-threshold`, if `ge` (greater or equal than) then the alert triggers only if price increases by at least `+threshold`. Otherwise the alert triggers in both directions.
+
+Notifies if there are major changes in price compared to last trading session.
