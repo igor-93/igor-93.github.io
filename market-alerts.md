@@ -2,9 +2,9 @@
 layout: default
 ---
 
-# Market Alerts
+# Market Event Notification Tool
 
-I've recently built the Market Alerts tool because I wanted to track few tickers without the need to check them up regualry.
+I've recently built the Market Event Notification Tool because I wanted to track few tickers without the need to check them up manually on daily or intra-daily basis.
 
 So I bought a Raspberry Pi and wrote a bit of code that notifies my via email when something interesting happens.
 
