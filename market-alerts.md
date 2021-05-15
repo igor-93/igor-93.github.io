@@ -126,3 +126,13 @@ Notifies you if the price of a given ticker has crossed the specifed price.
 
 This indicator triggers when price crosses lower or upper bound of [Bollinger Band](https://en.wikipedia.org/wiki/Bollinger_Bands). Example of the Bollinger Bands on S&P 500 index:
 ![Bollinger Band Example](/images/bollinger_band.png)
+
+#### Crossing Moving Averages (MA)
+- Indicator name: `crossing_moving_average`
+- Parameters:
+	- `short_window`: time-range used to calculate more recent moving average. E.g. `7d`
+	- `long_window`: time-range used to calculate more long-term moving average. E.g. `14d`
+	- `threshold`: value by which long- and shor-window MAs must differ in order to trigger and alert.
+
+This indicator triggers when short-window MA crosses the long-window MA and has a difference of at least threshold. Example plot of 7 and 14 days moving averages of S&P 500 index: 
+![Crossing Moving Average](/images/crossing_moving_average.png)
