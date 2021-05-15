@@ -32,5 +32,5 @@ You can also check my [Github](https://www.github.com/igor-93).
 Since I started this page just recently, I am a bit lazy to fill it with all of the projects I've done so far, 
 so I will only mention one for now...
 
-It is a market event notification tool. More about it [here](./market-alerts).
+It is a [Market Event Notification Tool](./market-alerts).
 
