@@ -1,18 +1,28 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: About Igor
 ---
 
-Some information about you!
 
-### More Information
+# About me
 
-I am a computer scientist with interests in data science, machine learning, finances, trading, data engineering...
+I am a computer scientist, data scientist and I am especially interested in 
+* machine learning, 
+* finances, 
+* trading, 
+* data engineering,
+* and much more...
 
+In my free time when I don't code for work, I code for myself :D 
+I also trade a bit and I like exploring the financial data...
 
-### Contact me
+My favorite languages are python (super fast to code) and C++ (super fast to run).
 
-Since I am receiving lots of spam emails, I wouldd be happy if you contact my on 
-[LinkedIn](https://www.linkedin.com/in/igor-pesic/). 
+My background is computer science which I studied first at RWTH Aachen University (B.Sc.) and then at ETH Zurich (M.Sc.).
+
+Although I've been moving a bit, I am now living in Zurich.
+
+### Contact
+
+Feel free to ping me on [LinkedIn](https://www.linkedin.com/in/igor-pesic/). 
 You can also check my [Github](https://www.github.com/igor-93)
