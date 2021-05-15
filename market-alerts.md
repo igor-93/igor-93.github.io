@@ -110,3 +110,19 @@ Note: currently, it only takes into account the available data that I have, not 
 	- `sign`: optional. If `le` (stands for less or equal than) then the alert triggers only if price drops by at least `-threshold`, if `ge` (greater or equal than) then the alert triggers only if price increases by at least `+threshold`. Otherwise the alert triggers in both directions.
 
 Notifies if there are major changes in price compared to last trading session.
+
+#### Absolute threshold
+- Indicator name: `abs_threshold`
+- Parameters:
+	- `threshold`: alert triggers when threshold price is reached. E.g. 120.
+
+Notifies you if the price of a given ticker has crossed the specifed price.
+
+#### Bollinger Band
+- Indicator name: `bollinger_band`
+- Parameters:
+	- `band_width`: describes how many standard deviations should the bands be away from the mean. Example values: 1,2,3.... Default is `2`.
+	- `std_history`: time-range used to estimate the standard deviation. Example value `7d` means that last 7 days will be used to get the standard deviation of prices. Default is `7d`.
+
+This indicator triggers when price crosses lower or upper bound of [Bollinger Band](https://en.wikipedia.org/wiki/Bollinger_Bands). Example of the Bollinger Bands on S&P 500 index:
+![Bollinger Band Example](/images/bollinger_band.png)
