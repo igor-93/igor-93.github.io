@@ -9,6 +9,8 @@ python -m ipykernel install --user --name ignite_ml_lab --display-name "ignite_m
 pip install …
 ```
 
+Conda cheatsheet: [pdf](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf)
+
 Plot correlation between categorical features and response variable:
 ```
 def encode(frame, feature):
